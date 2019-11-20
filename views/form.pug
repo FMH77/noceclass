@@ -1,0 +1,70 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+        title First Pug Template
+    body
+    div.row.justify-content-center
+        div.col-md-6
+            div.card.body
+                header.card.header
+                    h4.card-title Register
+                form(method ="POST" action="/register")
+                    div.form-row
+                        div.col.form-group
+                            label First Name
+                            input.form-control(name="firstname")
+                        
+                        div.col.form-group
+                            label Last Name
+                            input.form-control(name="lastname")
+                    //- div.form-row
+                    //-         label Password
+                    //-         input.form-control(name="password")
+                    //-         small We'll never share your email with anyone else
+                    //- br
+                    
+                    //- div.form-row
+                    //-     label Gender 
+                    //-     div.form-group 
+                    //-             input.form-control(type="radio")
+                    //-             span Male
+                    //-     div.form-group
+                    //-             input.form-control(type="radio")
+                    //-             span Female
+                            
+                    div.form-row
+                        div.col-md-6
+                            div.form-group
+                                label City
+                                input.form-control(name="city")
+                        //- div.col-md-6 
+                        //-     div.form.group 
+                        //-         label Country
+                        //-             br
+                        //-             select(name="country")
+                        //-                 option Choose
+                        //-                 option(selected) Uganda
+                        //-                 option Rwanda
+                        //-                 option Kenya
+                        //-                 option TZ
+                        //-                 option Sudan
+                    //- div.form.row 
+                    //-     div.form-group 
+                    //-         label Create password
+                    //-         input.form-control(name="password")
+
+                    div.form.row
+                        div.form-group
+                            button Submit
+                    small By clicking the 'Sign Up' button, you confirm that you accept our 
+                    br
+                    small Terms of use and Privacy Policy. 
+                    div.row.justify-content-center 
+                        div "Have an account" 
+                        a.href  Log In
+
+
+
+                            
+

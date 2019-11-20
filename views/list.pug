@@ -1,0 +1,21 @@
+doctype.html
+html
+    head
+        link(rel="stylesheet", href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css")
+        title Registered Files
+    body
+        header.card-header 
+            h4.card-title Registered users
+        table.table
+            thead.thead-dark
+                tr
+                    th Firstname
+                    th Lastname
+                    th city
+                tbody
+                    each user in users
+                        tr
+                            td #{user.firstname}
+                            td #{user.lastname}
+                            td #{user.city}
+            
